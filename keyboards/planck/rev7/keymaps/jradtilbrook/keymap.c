@@ -38,14 +38,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * | Nav  |   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  |Enter |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Brite| Ctrl | Alt  | GUI  |Lower | Shift|Space |Raise | Left | Down |  Up  |Right |
+ * |      |      |      | GUI  |Lower | Shift|Space |Raise | Rpt  |      |      |      |
  * `-----------------------------------------------------------------------------------'
  */
 [_QWERTY] = LAYOUT(
     KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
     KC_ESC,LGUI_T(KC_A),LALT_T(KC_S),LSFT_T(KC_D),LCTL_T(KC_F),HYPR_T(KC_G),HYPR_T(KC_H),RCTL_T(KC_J),RSFT_T(KC_K),RALT_T(KC_L),RGUI_T(KC_SCLN), KC_QUOT,
     NAV, LT(_VIM,KC_Z),KC_X,   KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT ,
-    BACKLIT, KC_LCTL, KC_LALT, KC_LGUI, LOWER,   KC_LSFT, KC_SPC,  RAISE,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
+    XXXXXXX, XXXXXXX, XXXXXXX, KC_LGUI, LOWER,   KC_LSFT, KC_SPC,  RAISE,    QK_REP, XXXXXXX, XXXXXXX,   XXXXXXX
 ),
 
 [_NAV] = LAYOUT(
