@@ -16,7 +16,6 @@
 
 #include QMK_KEYBOARD_H
 #include "quantum_keycodes.h"
-#include "features/achordion.h"
 
 enum planck_layers { _QWERTY, _NAV, _LOWER, _RAISE, _ADJUST, _VIM };
 
@@ -123,16 +122,6 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     return update_tri_layer_state(state, _LOWER, _RAISE, _ADJUST);
 }
 
-void matrix_scan_user(void) {
-    achordion_task();
-}
-
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    if (!process_achordion(keycode, record)) {
-        return false;
-    }
-    return true;
-}
 
 // change underglow colour when caps word is active
 void caps_word_set_user(bool active) {
