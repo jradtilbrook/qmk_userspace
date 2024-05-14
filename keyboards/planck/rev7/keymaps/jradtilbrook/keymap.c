@@ -143,22 +143,22 @@ layer_state_t layer_state_set_user(layer_state_t state) {
  * 7     8     1     2
  */
 const rgblight_segment_t PROGMEM rgb_caps_word[] = RGBLIGHT_LAYER_SEGMENTS(
-    {4, 2, HSV_ORANGE}
+    {4, 2, HSV_RED}
 );
 const rgblight_segment_t PROGMEM rgb_nav_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {8, 1, HSV_GOLDENROD}
+    {8, 1, HSV_MAGENTA}
 );
 const rgblight_segment_t PROGMEM rgb_lower_layer[] = RGBLIGHT_LAYER_SEGMENTS(
     {5, 2, HSV_PURPLE}
 );
 const rgblight_segment_t PROGMEM rgb_raise_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {3, 2, HSV_GREEN}
+    {3, 2, HSV_PURPLE}
 );
 const rgblight_segment_t PROGMEM rgb_adjust_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {3, 2, HSV_GREEN}
+    {4, 2, HSV_WHITE}
 );
 const rgblight_segment_t PROGMEM rgb_vim_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {1, 1, HSV_GOLDENROD}
+    {1, 1, HSV_MAGENTA}
 );
 const rgblight_segment_t PROGMEM rgb_bootloader[] = RGBLIGHT_LAYER_SEGMENTS(
     {0, 9, HSV_RED}
